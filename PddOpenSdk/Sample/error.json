@@ -9,3 +9,17 @@
 {"error_response":{"error_msg":"图片格式错误","sub_msg":"图片格式错误","sub_code":"48001","error_code":50001,"request_id":"15529801825049744"}}
 {"error_response":{"error_msg":"图片格式错误","sub_msg":"图片格式错误","sub_code":"48001","error_code":50001,"request_id":"15529808975209571"}}
 {"error_response":{"error_msg":"图片格式错误","sub_msg":"图片格式错误","sub_code":"48001","error_code":50001,"request_id":"15529809346953960"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547026554087754"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547027001864859"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547032038760145"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547032809097585"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547035130543162"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547039883598486"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547042208279445"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547042434906220"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15547043826575460"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548811177589841"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548811466251122"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548812882964960"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548815420825760"}}
+{"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548816571123305"}}

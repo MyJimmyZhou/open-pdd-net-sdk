@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PddOpenSdk.AspNetCore;
 using PddOpenSdk.Models.Request.Ddk;
+using PddOpenSdk.Models.Request.Ddkoauth;
 using PddOpenSdk.Models.Request.Goods;
 using PddOpenSdk.Services;
 using Sample.Models;
@@ -17,7 +18,7 @@ namespace Sample.Controllers
     {
         readonly IHostingEnvironment _env;
         readonly PddService _pdd;
-        readonly string AccessToken = "2f80862fdd4e40328539593a0af50037d046758c";
+        readonly string AccessToken = "f4a72903f643401eaec5271dbb956b405d3ea1f0";
         public AuthController(PddService pdd, IHostingEnvironment env)
         {
             _pdd = pdd;
@@ -49,14 +50,12 @@ namespace Sample.Controllers
         /// <returns></returns>
         public async Task<ActionResult> Test()
         {
-            var model = new GenDdkWeappQrcodeUrlRequestModel
-            {
-                PId = "123133",
-                GoodsIdList = new System.Collections.Generic.List<long> { 1122, 331323 }
-            };
-
-            var result = await _pdd.DdkApi.GenDdkWeappQrcodeUrlAsync(model);
-
+            var result = await _pdd.DdkApi.GetDdkOrderListIncrementAsync(new GetDdkOrderListIncrementRequestModel {
+                StartUpdateTime = DateTimeOffset.Now.AddMinutes(-10).ToUnixTimeSeconds(),
+                EndUpdateTime = DateTimeOffset.Now.ToUnixTimeSeconds(),
+                Page = 1,
+                PageSize = 50
+            });
             return Json(result);
         }
 
