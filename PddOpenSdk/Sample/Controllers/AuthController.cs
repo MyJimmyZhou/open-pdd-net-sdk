@@ -50,11 +50,15 @@ namespace Sample.Controllers
         /// <returns></returns>
         public async Task<ActionResult> Test()
         {
-            var result = await _pdd.DdkApi.GetDdkOrderListIncrementAsync(new GetDdkOrderListIncrementRequestModel {
-                StartUpdateTime = DateTimeOffset.Now.AddMinutes(-10).ToUnixTimeSeconds(),
-                EndUpdateTime = DateTimeOffset.Now.ToUnixTimeSeconds(),
-                Page = 1,
-                PageSize = 50
+            //var result = await _pdd.DdkApi.GetDdkOrderListIncrementAsync(new GetDdkOrderListIncrementRequestModel {
+            //    StartUpdateTime = DateTimeOffset.Now.AddMinutes(-10).ToUnixTimeSeconds(),
+            //    EndUpdateTime = DateTimeOffset.Now.ToUnixTimeSeconds(),
+            //    Page = 1,
+            //    PageSize = 50
+            //});
+            var result = await _pdd.DdkApi.GetDdkOrderDetailAsync(new GetDdkOrderDetailRequestModel
+            {
+                OrderSn = "190410-102467503050906"
             });
             return Json(result);
         }
