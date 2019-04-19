@@ -56,9 +56,15 @@ namespace Sample.Controllers
             //    Page = 1,
             //    PageSize = 50
             //});
-            var result = await _pdd.DdkApi.GetDdkOrderDetailAsync(new GetDdkOrderDetailRequestModel
+            //var result = await _pdd.DdkApi.GetDdkOrderDetailAsync(new GetDdkOrderDetailRequestModel
+            //{
+            //    OrderSn = "190410-102467503050906"
+            //});
+            var result = await _pdd.DdkApi.GetDdkMallGoodsListAsync(new GetDdkMallGoodsListRequestModel
             {
-                OrderSn = "190410-102467503050906"
+                MallId = 712520300,
+                PageNumber = 1,
+                PageSize = 5
             });
             return Json(result);
         }

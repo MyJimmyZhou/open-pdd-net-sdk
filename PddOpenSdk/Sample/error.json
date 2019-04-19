@@ -23,3 +23,5 @@
 {"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548812882964960"}}
 {"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548815420825760"}}
 {"error_response":{"error_msg":"签名验证失败","sub_msg":"","sub_code":null,"error_code":20004,"request_id":"15548816571123305"}}
+{"error_response":{"error_msg":"参数错误:merchant_type_list","sub_msg":"","sub_code":null,"error_code":10000,"request_id":"15556570428276704"}}
+{"error_response":{"error_msg":"参数错误:merchant_type_list","sub_msg":"","sub_code":null,"error_code":10000,"request_id":"15556570645632320"}}
