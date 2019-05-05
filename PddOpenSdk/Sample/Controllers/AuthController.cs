@@ -50,22 +50,23 @@ namespace Sample.Controllers
         /// <returns></returns>
         public async Task<ActionResult> Test()
         {
-            //var result = await _pdd.DdkApi.GetDdkOrderListIncrementAsync(new GetDdkOrderListIncrementRequestModel {
-            //    StartUpdateTime = DateTimeOffset.Now.AddMinutes(-10).ToUnixTimeSeconds(),
-            //    EndUpdateTime = DateTimeOffset.Now.ToUnixTimeSeconds(),
-            //    Page = 1,
-            //    PageSize = 50
-            //});
+            var result = await _pdd.DdkApi.GetDdkOrderListIncrementAsync(new GetDdkOrderListIncrementRequestModel
+            {
+                StartUpdateTime = DateTimeOffset.Now.AddMinutes(-10).ToUnixTimeSeconds(),
+                EndUpdateTime = DateTimeOffset.Now.ToUnixTimeSeconds(),
+                Page = 1,
+                PageSize = 50
+            });
             //var result = await _pdd.DdkApi.GetDdkOrderDetailAsync(new GetDdkOrderDetailRequestModel
             //{
             //    OrderSn = "190410-102467503050906"
             //});
-            var result = await _pdd.DdkApi.GetDdkMallGoodsListAsync(new GetDdkMallGoodsListRequestModel
-            {
-                MallId = 712520300,
-                PageNumber = 1,
-                PageSize = 5
-            });
+            //var result = await _pdd.DdkApi.GetDdkMallGoodsListAsync(new GetDdkMallGoodsListRequestModel
+            //{
+            //    MallId = 712520300,
+            //    PageNumber = 1,
+            //    PageSize = 5
+            //});
             return Json(result);
         }
 
